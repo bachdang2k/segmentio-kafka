@@ -1,0 +1,4 @@
+kafka:
+  brokers:
+    - kafka1:19092
+

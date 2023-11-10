@@ -20,8 +20,8 @@ func NewProducer() *Producer {
 	}
 
 	writer := kafka.NewWriter(kafka.WriterConfig{
-		Brokers: []string{"10.84.86.42:9092"},
-		Dialer:  dialer,
+		Brokers: []string{"kafka:9092"},
+		Dialer: dialer,
 	})
 
 	return &Producer{
